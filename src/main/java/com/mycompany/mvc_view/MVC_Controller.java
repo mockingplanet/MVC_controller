@@ -11,17 +11,16 @@ import java.awt.event.ActionListener;
  *
  * @author alu10711158
  */
-public class MVC_Controller {
+public class MVC_Controller implements ActionListener{
 
     private  MVC_View view;
     private MVC_Model model;
     private int result = 0;
-    private ActionListener act;
 
     public MVC_Controller(MVC_View v, MVC_Model m) {
         view = v;
         model = m;
-        view.setActionListener(act);
+        view.setActionListener(this);
     }
 
     

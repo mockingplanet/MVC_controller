@@ -8,6 +8,7 @@ import java.awt.Container;
 import java.awt.FlowLayout;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
@@ -15,12 +16,12 @@ import javax.swing.JTextField;
  *
  * @author alu10711158
  */
-public class MVC_View {
+public class MVC_View extends JFrame{
 
-Container con;
-JButton addButton;
-JTextField textField1,textField2,textFieldresult;
-JLabel first,second,result;
+private Container con;
+private JButton addButton;
+private JTextField textField1,textField2,textFieldresult;
+private JLabel first,second,result;
 
 public MVC_View() {
         con = getContentPane();
@@ -44,31 +45,6 @@ public MVC_View() {
         setVisible(true);
     }
 
-
-
-    private void setTitle(String title) {
-        this.setTitle(title);
-        
-    }
-
-    private void setSize(int i, int i0) {
-        this.setSize(i, i0);
-    }
-
-    private void setVisible(boolean b) {
-        this.setVisible(b);
-    }
-
-    private void setLayout(FlowLayout flowLayout) {
-        this.setLayout(flowLayout);
-    }
-    
-    private Container getContentPane() {
-        return this.getContentPane();
-    }
-
-
-    
     public String getValue1() {
         return textField1.getText();
     }
